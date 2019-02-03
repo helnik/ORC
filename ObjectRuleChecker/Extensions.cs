@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using ObjectRuleChecker.ExpressionEquality;
 
 namespace ObjectRuleChecker
 {
@@ -12,5 +14,10 @@ namespace ObjectRuleChecker
         {
             if (s.HasNoContext()) throw  new ArgumentException("errorMessage");
         }
+
+        //internal static HashSet<ValidationRule<T>> ToHashSet<T>(this IEnumerable<ValidationRule<T>> enumerable) where T : class
+        //{
+        //    return new HashSet<ValidationRule<T>>(enumerable, ValidationRuleExpressionEqualityComparer<T>.Instance);
+        //}
     }
 }

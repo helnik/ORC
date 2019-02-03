@@ -6,6 +6,7 @@ namespace ObjectRuleChecker
     public class ValidationRule<T> where T : class
     {
         public Exception Exception { get; private set; }
+        //public readonly Expression<Func<T, bool>> ExpressionRule;
         public bool IsBlockingRule { get; private set; } 
         private readonly Lazy<string> expressionString;
         private readonly Lazy<Func<T, bool>> predicate;
@@ -13,6 +14,7 @@ namespace ObjectRuleChecker
         public ValidationRule(Expression<Func<T, bool>> expression)
         {
             if (expression == null) throw new ArgumentNullException(nameof(expression));
+            //ExpressionRule = expression ?? throw new ArgumentNullException(nameof(expression));
             predicate = new Lazy<Func<T, bool>>(expression.Compile);
             expressionString = new Lazy<string>(() => GetExpressionToString(expression));
         }
