@@ -7,6 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObjectRuleChecker", "Object
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrcTests", "OrcTests\OrcTests.csproj", "{EED8600F-EBEB-48BE-B6D5-94756BE3C3C2}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{160DBF73-618E-4CDB-AC5E-9ECF930E9608}"
+	ProjectSection(SolutionItems) = preProject
+		references.txt = references.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

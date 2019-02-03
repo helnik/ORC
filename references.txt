@@ -1,0 +1,5 @@
+Equality comparer for expressions 
+https://github.com/ismell/Continuous-LINQ/blob/master/ContinuousLinq/Expressions/ExpressionEqualityComparer.cs
+
+Equality comparer for expressions
+https://github.com/nsarris/Dynamix/tree/master/Dynamix/Expressions/EqualityComparison

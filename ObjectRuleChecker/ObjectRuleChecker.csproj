@@ -4,4 +4,10 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="ExpressionEquality\**" />
+    <EmbeddedResource Remove="ExpressionEquality\**" />
+    <None Remove="ExpressionEquality\**" />
+  </ItemGroup>
+
 </Project>

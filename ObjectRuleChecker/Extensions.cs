@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using ObjectRuleChecker.ExpressionEquality;
 
 namespace ObjectRuleChecker
 {
@@ -17,6 +15,7 @@ namespace ObjectRuleChecker
 
         //internal static HashSet<ValidationRule<T>> ToHashSet<T>(this IEnumerable<ValidationRule<T>> enumerable) where T : class
         //{
+        //    //excluded from project code exists in directory
         //    return new HashSet<ValidationRule<T>>(enumerable, ValidationRuleExpressionEqualityComparer<T>.Instance);
         //}
     }
