@@ -12,7 +12,7 @@ namespace ObjectRuleChecker
      
         public ObjectRuleChecker(IEnumerable<ValidationRule<T>> rules)
         {
-            if (rules == null) throw new ArgumentNullException(nameof(validationRules));
+            if (rules == null) throw new ArgumentNullException(nameof(rules));
             validationRules = rules.ToList();
         }
 
